@@ -18,21 +18,7 @@
             <div class="intro-slide" style="background-image: url({{asset($produk->image)}});">
                 <div class="container intro-content">
                     <div class="row">
-                        <div class="intro">
-                            <div class="title">
-                                <h3>{{$produk->name}}</h3>
-                            </div>
-
-                            <div class="price">
-                                <h3>SAVE UP TO 30%</h3>
-                                </div>
-                            <div class="action">
-                                <a href="{{ route('user.produk.detail',['id' =>  $produk->id]) }}" class="btn btn-primary">
-                                    <span>DISCOVER NOW</span>
-                                </a>
-                            </div>
-
-                        </div>
+                     
                     </div><!-- End .row -->
                 </div><!-- End .intro-content -->
             </div><!-- End .intro-slide -->
@@ -92,7 +78,7 @@
 
                                   <h3 class="product-title"><a href="{{ route('user.produk.detail',['id' =>  $produk->id]) }}">{{$produk->name}}</a></h3><!-- End .product-title -->
                                   <div class="product-price">
-                                      <span class="new-price">{{$produk->price}}</span>
+                                      <span class="new-price">Rp. {{number_format($produk->price ,0, ',','.')}}</span>
                                   </div><!-- End .product-price -->
                                 </div><!-- End .product-body -->
                           </div><!-- End .product -->

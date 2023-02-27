@@ -44,12 +44,7 @@
                                         <input type="email" class="form-control" name="email" value="{{$user->email}}"/>
                                             
                                         </div>
-                                        <div class="w-1/4">
-                                            <div class="form-group">
-                                                <label>Foto</label>
-                                                <input type="file" name="image" class="form-control">
-                                            </div>
-                                        </div>
+                                        
                                         <div class="text-right">
                                             <button type="submit" class="btn btn-success text-right">Simpan</button>
                                         </div>

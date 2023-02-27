@@ -20,8 +20,7 @@ class DashboardController extends Controller
         $pendapatan = Order::select(DB::raw('SUM(subtotal) as penghasilan'))
             ->where('status_order_id', 5)
             ->first();
-        $transaksi = Order::select(DB::raw('COUNT(id) as total_order'))
-            ->first();
+        $transaksi = Order::all();
         $pelanggan = User::select(DB::raw('COUNT(id) as total_user'))
             ->where('role', '=', 'customer')
             ->first();
