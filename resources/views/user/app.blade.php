@@ -148,7 +148,6 @@
                                                 </button>
     
     
-                                                <a href="#" class="forgot-link">Forgot Your Password?</a>
                                             </div><!-- End .form-footer -->
                                         </form>
                                      
